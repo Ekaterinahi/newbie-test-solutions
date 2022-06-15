@@ -6,3 +6,4 @@ def test_goods_has_add_to_basket_button(browser):
     browser.get(link)
     sleep(30) #sleep для проверки правильности инициализации браузера
     browser.find_element_by_css_selector('.btn-add-to-basket')
+    assert add_to_basket, 'кнопка добавления товара отсутвует'
